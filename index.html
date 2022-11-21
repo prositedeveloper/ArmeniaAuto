@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Лаб Раб</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://allfont.ru/allfont.css?fonts=bodoni" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<h1> My First Car</h1>
+
+
+
+
+    
+<div class="scrollmenu">
+  <a href="index.html">Главная</a>
+  <a href="оформление.html">оформление авто</a>
+  <a href="Подробнее.html">О компании</a>
+</div>
+
+<h2>Привозка и Растарможка авто из Европы</h2>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(20,2,0,0.8);
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f6f1f0;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #000000;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #696969;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="1.jpeg" style="width:100%">
+      <div class="text">Lincoln</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="2.jpeg" style="width:100%">
+      <div class="text">Mercedes-Benz_W140</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="3.jpeg" style="width:100%">
+      <div class="text">BMW_E32</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+<style>
+    
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+h4{
+  font-size: 25px;
+  color: #1;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: #696969;
+    width: 330px;
+    height: 400px;
+    padding: 20px 20px;
+
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #00000;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #00000;
+}
+
+.btn.active {
+  background-color: #00000;
+  color: #00000;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+
+
+<h2>Каталог Авто</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Все Авто</button>
+  <button class="btn" onclick="filterSelection('Lincoln')">Lincoln</button>
+  <button class="btn" onclick="filterSelection('BMW')">BMW</button>
+  <button class="btn" onclick="filterSelection('Mercedes')">Mercedes-Benz</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Lincoln">
+    <div class="content">
+      <img src="Navigator.jpg" alt="Lincoln" height="180px" style="width:100%">
+      <h4>Lincoln Navigator</h4>
+      <p>78000$</p>
+    </div>
+  </div>
+  <div class="column Lincoln">
+    <div class="content">
+    <img src="Towncar.jpg" alt="Lincoln " height="180px" style="width:100%">
+      <h4>Lincoln Towncar</h4>
+      <p>67000$</p>
+    </div>
+  </div>
+  <div class="column Lincoln">
+    <div class="content">
+    <img src="Lincoln.jpg" alt="Lincoln" height="180px" style="width:100%">
+      <h4>Lincoln</h4>
+      <p>82000$</p>
+    </div>
+  </div>
+  
+  <div class="column BMW">
+    <div class="content">
+      <img src="e30.jpeg" alt="BMW" height="180px" style="width:100%">
+      <h4>BMW 3 series (e30)</h4>
+      <p>44000$</p>
+    </div>
+  </div>
+  <div class="column BMW">
+    <div class="content">
+    <img src="3.jpeg" alt="BMW" height="180px" style="width:100%">
+      <h4>BMW 5 series (e32)</h4>
+      <p>65000$</p>
+    </div>
+  </div>
+  <div class="column BMW">
+    <div class="content">
+    <img src="e38.jpg" alt="BMW" height="180px" style="width:100%">
+      <h4>BMW 7 series(E38)</h4>
+      <p>91000$</p>
+    </div>
+  </div>
+
+  <div class="column Mercedes">
+    <div class="content">
+      <img src="124.jpg" alt="Mercedes-Benz" height="180px" style="width:100%">
+      <h4>Mercedes-Benz w124</h4>
+      <p>42000$</p>
+    </div>
+  </div>
+  <div class="column Mercedes">
+    <div class="content">
+    <img src="https://i.pinimg.com/originals/99/18/ee/9918ee9e090eb8ad49e754663560b6fe.jpg" alt="Mercedes-Benz" height="180px" style="width:100%">
+      <h4>Mercedes-Benz w210 E55</h4>
+      <p>62000$</p>
+    </div>
+  </div>
+  <div class="column Mercedes">
+    <div class="content">
+    <img src="2.jpeg" alt="Mercedes-Benz" height="180px" style="width:100%">
+      <h4>Mercedes-Benz w140</h4>
+      <p>77000$</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+</body>
+</html>
+
+
+
